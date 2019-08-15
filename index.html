@@ -13,7 +13,7 @@
     <div class="jumbotron">
       <h1 class="display-4">Vote if you want to live!</h1>
       <p class="lead">You can vote here if you're old enough. If you're not old enough, check out some of the links provided to get some more information about why voting is cool</p>
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target=".modal">Check if you can vote!</button>
+      <button id="check" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target=".modal">Check if you can vote!</button>
     </div>
     <div class="modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -25,9 +25,11 @@
             </button>
           </div>
           <div class="modal-body">
-              <p>Are you 18 or older?</p>
-              <button type="button" class="btn btn-primary">Yes</button>
-              <button type="button" class="btn btn-secondary">No</button>
+              <p>How old are you?</p>
+              <form id="agecheck">
+                <input id="age" type="text"></input>
+                <button id ="submit" type="submit" class="btn btn-secondary">Submit</button>
+              </form>
           </div>
         </div>
       </div>
@@ -40,7 +42,10 @@
       <h2>The weight of the world rests on your shoulders</h2>
       <p>If you don't know by now, voting is extremely important. Congratulations on realizing this yourself and visiting this webpage. We have provided a link that will take you directly to the voting form. FILL IT OUT!</p>
     </div>
-
+    <div id = "stopplayin">
+      <h2>You think you're funny, huh?</h2>
+      <p>Stop playing. Go back and enter your age using a numeral.</p>
+    </div>
 
 
   </body>
